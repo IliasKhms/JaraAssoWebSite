@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --couleur-1 : #0e3edb;
+    --couleur-2 : #FFFFFF;
+    --couleur-3 : #cdc4ff;
+
+}

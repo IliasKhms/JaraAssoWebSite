@@ -1,0 +1,132 @@
+header {
+    height: 100%;
+    width: 100%;
+    background-color: var(--couleur-1);
+    
+}
+
+.navbar{
+    position : fixed;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--couleur-1);
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.navbar-horizontal { //gère les conteneurs des liens et des boutons
+    display: flex;              /* Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+.navbar .navbar-links-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .navbar-links-left ul {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.navbar .navbar-button-right{
+    display: flex;
+    gap: 20px; 
+    padding-right: 20px;
+}
+
+.navbar .navbar-button-right button{
+    background-color: var(--couleur-2);
+    color: var(--couleur-1);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar .menu-btn{
+    position : absolute;
+    z-index: 10;
+    top : 40px;
+    right : 25px;
+    width: 35px;
+}
+
+.btn-logo{
+    height: 40px;
+}
+
+.navbar .menu-btn .img-btn{ 
+    position: absolute;
+    background-color: transparent; /* Fond totalement transparent */
+    border: none; /* Supprimer les bordures */
+    padding: 0; /* Enlever le padding interne */
+    cursor: pointer; 
+
+}
+
+.navbar-vertical {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--couleur-1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 1;
+    color : var(--couleur-2)
+  }
+
+  .navbar-vertical ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .navbar-vertical ul button {
+      background-color: var(--couleur-2);
+    color: var(--couleur-1);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Quand le menu est ouvert */
+  .navbar-vertical-open {
+    display: flex;
+    transform: translateY(0);
+  }
+
+
+
+   
+
+
+
+
+
+
+
+  

@@ -1,0 +1,41 @@
+<header>
+    <nav class="navbar">
+        <img src="assets/logo.png" alt="Logo" class="navbar-logo">
+
+        <div *ngIf="!showMenuBurger" class= "navbar-horizontal">
+            <div class="navbar-links-left">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">JARA</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-button-right">
+                <button class="navbar-button">Nous rejoindre</button>
+                <button class="navbar-button">Faire un don</button>
+            </div>
+        </div>
+        
+        <div *ngIf="showMenuBurger" class = "menu-btn">
+        <button  class=" img-btn" (click) = " showMenu()">
+            <img src="assets/menu-btn.png" alt="Menu" class = "btn-logo">
+        </button>
+        </div>
+        <div [ngClass]="{'navbar-vertical': true, 'navbar-vertical-open': showVerticalMenu}">
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">JARA</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><button class="navbar-button">Nous rejoindre</button></li>
+              <li><button class="navbar-button">Faire un don</button></li>
+            </ul>
+          </div>
+
+
+
+       
+    </nav>
+</header>
