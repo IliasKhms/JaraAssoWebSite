@@ -1,0 +1,53 @@
+
+.article-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    width: 100%; /* Largeur de 100% de la largeur de la vue */
+    overflow: hidden;
+    position: absolute;
+    left :10px;
+    top: 0px;
+    ;
+}
+
+.article-card-title{
+    font-weight: bold;
+    margin: 10px;
+    height: 20%;
+    width: 100%;
+  
+}
+
+.article-card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin : 10px;
+    height: 100%;
+    width: 90%;
+    
+}
+.article-card-img-box{
+    margin-top: 2.5px;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+
+}
+.article-card-img-box img{
+    width: 240px;
+    height: 130px;
+}
+
+.article-card-text{
+    padding-left: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.article-card-text p{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,58 @@
+.headline-conteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-card{
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    align-items: center;
+    height:25vh;
+    width: 70vw; /* Largeur de 100% de la largeur de la vue */
+    //faire une marge en haut, à gauche, à droite et en bas de 20px
+    margin: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    //faire une ombre portée
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Pour s'assurer que rien ne déborde */
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 70%; /* Largeur de 100% de la largeur de la vue */
+}
+
+.headline-card-button{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    background-color: var(--couleur-1);
+    color: var(--couleur-2);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+a {
+    color: var(--couleur-1);
+    text-decoration: none; /* Supprime le soulignement */
+  }
+  
+  a:visited {
+    color: var(--couleur-1);
+  }
+  
