@@ -5,6 +5,7 @@ import { PresentationCardComponent } from "../presentation-card/presentation-car
 import { HeadlineCardComponent } from '../headline-card/headline-card.component';
 import { EventForComingCardComponent } from "../event-for-coming-card/event-for-coming-card.component";
 import { FooterComponent } from "../footer/footer.component";
+import { ContactComponent } from "../contact/contact.component";
 
 @Component({
   selector: 'app-root',
@@ -12,9 +13,10 @@ import { FooterComponent } from "../footer/footer.component";
   imports: [RouterOutlet,
     HeaderComponent,
     PresentationCardComponent,
-    HeadlineCardComponent, 
+    HeadlineCardComponent,
     EventForComingCardComponent,
-    FooterComponent],
+    FooterComponent, 
+    ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
