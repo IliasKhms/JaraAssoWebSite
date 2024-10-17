@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener} from '@angular/core';
 import { CheckScreenWidthService } from '../../services/checkScreenWidth.service';
 import { NgIf,NgClass } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -8,7 +9,8 @@ import { NgIf,NgClass } from '@angular/common';
   standalone: true,
   imports: [
     NgIf,
-    NgClass
+    NgClass,
+    RouterLink
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

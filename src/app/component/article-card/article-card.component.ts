@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Article } from '../../models/article';
-import { SlicePipe } from '@angular/common';
+import { NgClass, SlicePipe } from '@angular/common';
+
 
 @Component({
   selector: 'app-article-card',
   standalone: true,
-  imports: [SlicePipe],
+  imports: [SlicePipe,
+            NgClass
+  ],
   templateUrl: './article-card.component.html',
   styleUrl: './article-card.component.scss'
 })
 export class ArticleCardComponent {
+ @Input() layout :'vertical' | 'horizontal' = 'vertical';
+
   headLineArticle: Article = new Article(
     1, 
     "Un titre un peu long pour voir comment ça s'affiche", 

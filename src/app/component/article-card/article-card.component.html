@@ -1,15 +1,11 @@
-    <article class="article-card">
-        <a href = "#">
-            <h3 class="article-card-title">{{headLineArticle.title}}</h3>
-        </a>
-        <div class="article-card-content">
-            <div class="article-card-img-box">
-                <img [src]="headLineArticle.imgUrl"alt="Image de l'article" class="article-card-img">
-            </div>
-            <div class="article-card-text">
-                    <p>{{headLineArticle.content | slice:0:350 }}...</p>
-                    <a href = "" class="article-card-link">Lire la suite</a>
-            </div>
-        </div>
-    </article>
+<div class="article-card" [ngClass]="layout">
+    <img [src] = "headLineArticle.imgUrl" alt="ImageArticle">
+    <div class="article-content">
+        <h3>{{headLineArticle.title}}</h3>
+        <p>{{headLineArticle.content  | slice:0:350}}...</p>
+        <a>Lire la suite</a>
+         
+    </div>
 
+
+</div>
