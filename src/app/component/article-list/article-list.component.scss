@@ -1,0 +1,32 @@
+:host{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.articles-header {
+    margin: 20px;
+    text-align: center;
+}
+
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+app-article-card {
+    flex: 1 1 300px; /* permet aux cartes d'avoir une largeur flexible, par ex. min 300px */
+}
+
+@media (max-width: 768px) {
+    .articles-list {
+        gap: 10px; /* Réduire l'écart sur des écrans plus petits */
+        align-items: center;
+        justify-content: center;
+    }
+}
+   

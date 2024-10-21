@@ -6,13 +6,14 @@
             <div class="navbar-links-left">
                 <ul>
                     <li><a routerLink="">Accueil</a></li>
-                    <li><a href="#">Articles</a></li>
+                    <li><a routerLink="articles">Articles</a></li>
+                    <li><a routerLink="actions">Actions</a></li>
                     <li><a routerLink="contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="navbar-button-right">
-                <button class="navbar-button">Nous rejoindre</button>
+                <button class="navbar-button" >Nous rejoindre</button>
                 <button class="navbar-button" onclick="window.open('https://www.helloasso.com/associations/jara/formulaires/1', '_blank');">Faire un don</button>
             </div>
         </div>
@@ -25,7 +26,7 @@
         <div [ngClass]="{'navbar-vertical': true, 'navbar-vertical-open': showVerticalMenu}">
             <ul>
               <li><a routerLink="">Accueil</a></li>
-              <li><a href="#">Articles</a></li>
+              <li><a routerLink="articles">Articles</a></li>
               <li><a routerLink="contact">Contact</a></li>
               <li><button class="navbar-button">Nous rejoindre</button></li>
               <li>

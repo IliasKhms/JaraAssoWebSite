@@ -1,4 +1,11 @@
 <div class="articles-header">
     <h2>Articles</h2>
-    <p>Découvrez nos actions, nos volontaires et nos renconres</p>
+    <p>Découvrez nos actions, nos volontaires et nos rencontres</p>
+</div>
+<div class="articles-list">
+
+        @for(article of articles;track article.id) {
+            <app-article-card [article]="article"></app-article-card>
+        }
+        
 </div>

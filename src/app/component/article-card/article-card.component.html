@@ -1,8 +1,8 @@
 <div class="article-card" [ngClass]="layout">
-    <img [src] = "headLineArticle.imgUrl" alt="ImageArticle">
+    <img [src] = "article.imgUrl" alt="ImageArticle">
     <div class="article-content">
-        <h3>{{headLineArticle.title}}</h3>
-        <p>{{headLineArticle.content  | slice:0:350}}...</p>
+        <h3>{{article.title}}</h3>
+        <p>{{article.content  | slice:0:350}}...</p>
         <a>Lire la suite</a>
          
     </div>

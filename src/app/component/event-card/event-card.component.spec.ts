@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JoinusComponent } from './joinus.component';
+import { EventCardComponent } from './event-card.component';
 
-describe('JoinusComponent', () => {
-  let component: JoinusComponent;
-  let fixture: ComponentFixture<JoinusComponent>;
+describe('EventCardComponent', () => {
+  let component: EventCardComponent;
+  let fixture: ComponentFixture<EventCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [JoinusComponent]
+      imports: [EventCardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(JoinusComponent);
+    fixture = TestBed.createComponent(EventCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
