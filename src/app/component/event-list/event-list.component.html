@@ -11,6 +11,8 @@
         </div>
        
     }
-    <button> Nous rejoindre </button>
+    <button (click)="modalWindowService.openModal()"> Nous rejoindre </button>
 </div>
+
+<app-modal-join-us *ngIf="modalWindowService.showJoinUS"/>
 

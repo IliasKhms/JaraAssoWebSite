@@ -1,7 +1,10 @@
 import { Component, OnInit, HostListener} from '@angular/core';
 import { CheckScreenWidthService } from '../../services/checkScreenWidth.service';
+import { ModalWindowService } from '../../services/modal-window.service';
 import { NgIf,NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { ModalJoinUsComponent } from "../modal-join-us/modal-join-us.component";
+
 
 
 @Component({
@@ -10,8 +13,9 @@ import { RouterLink } from '@angular/router';
   imports: [
     NgIf,
     NgClass,
-    RouterLink
-  ],
+    RouterLink,
+    ModalJoinUsComponent
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -21,8 +25,10 @@ export class HeaderComponent implements OnInit {
   showMenuBurger = false;
   showVerticalMenu = false;
 
-  constructor(private checkScreenWidthService: CheckScreenWidthService) {} // Injection du service ici
-
+  constructor(
+              private checkScreenWidthService: CheckScreenWidthService,
+              public modalWindowService: ModalWindowService
+  ) {} 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
     this.checkScreenWidth(); // Appelle la méthode du service lors du redimensionnement
@@ -40,6 +46,10 @@ export class HeaderComponent implements OnInit {
     this.showVerticalMenu = !this.showVerticalMenu;//inverse la valeur de showVerticalMenu
     console.log(this.showVerticalMenu);
   }
+
+ 
+
+  
 
 }
 

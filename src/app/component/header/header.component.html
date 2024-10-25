@@ -13,7 +13,7 @@
             </div>
 
             <div class="navbar-button-right">
-                <button class="navbar-button" >Nous rejoindre</button>
+                <button class="navbar-button"(click)="modalWindowService.openModal()" >Nous rejoindre</button>
                 <button class="navbar-button" onclick="window.open('https://www.helloasso.com/associations/jara/formulaires/1', '_blank');">Faire un don</button>
             </div>
         </div>
@@ -42,3 +42,4 @@
        
     </nav>
 </header>
+<app-modal-join-us *ngIf="modalWindowService.showJoinUS"/>

@@ -1,0 +1,33 @@
+<div class="modal-containeur">
+  <div class="close-btn">
+   <button (click)="modalWindowService.closeModal()">X</button>
+  </div>
+  <div class="modal-header">
+    <img src="assets/logo.png" alt="Logo" class="presentation-card-logo">
+    <div class="modal-header-text">
+        <h2>Rejoignez notre association</h2>
+    </div>
+
+  </div>
+  <div class="modal-form">
+    <form action="">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+      </div>
+      <div class="form-group-full">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="modal-form-button">
+        <button type="submit">Rejoindre JARA</button>
+    </div>
+    </form>
+  </div>
+</div>
